@@ -1,0 +1,280 @@
+header {
+    background-color: rgba(102, 99, 91, 1);
+    height: 125px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.logo img {
+    max-height: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+body {
+    background-color: rgba(215, 206, 178, 1);
+    margin-top: 250px;
+}
+
+footer {
+    background-color: rgba(102, 99, 91, 1);
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+}
+
+section {
+    background-color: rgba(165, 158, 140, 1);
+    width: 1200px;
+    height: 650px;
+    margin: 140px;
+    border-radius: 40px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/*^^^^^^main gedeelte^^^^^^^^^*/
+/*vvvvv-divs en andere dingen-*/
+.landing1 {
+    background-color: rgba(215, 206, 178, 1);
+    margin: 100px;
+}
+
+.picture-land {
+    width: 1300px;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+.doorzicht {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 510px;
+    height: 230px;
+    z-index: 2;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+
+
+.download-button {
+    background-color: rgba(76, 87, 96, 1);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 42%;
+    z-index: 5;
+    border-radius: 30px;
+}
+
+/*^^^^^^^section landing^^^^^^*/
+/*vvvvvvvsection meer gamesvvv*/
+.meer-games {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.spellen1 {
+    width: 250px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.spellen1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spellen1:hover .spel-info {
+    opacity: 1;
+}
+
+.spellen1 .spel-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.spellen1 .spel-text {
+    margin: 0;
+    line-height: 1.4;
+}
+
+/*^^^^^^^meer games^^^^^^^^^^^*/
+/*vvvvvvvcommunity gamesvvvvvv*/
+.community {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .spel {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .spel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .spel-info {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .spel-text {
+    margin: 0;
+    line-height: 1.4;
+  }
+  
+  .spel:hover .spel-info {
+    opacity: 1;
+  }
+/*^^^^^^^^community games^^^^^*/
+/*vvvvvvvvmerchvvvvvvvvvvvvvvv*/
+.merchandise {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .merch {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    position: relative;
+  }
+  .merch img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+  .prijzen {
+    height: 30px;
+    width: 60px;
+    background-color: rgba(147, 168, 172, 1);
+    border-radius: 10px;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+/*^^^^^merch^^^^^^^^^^^^^^^^^^*/
+/*vvvvvfootervvvvvvvvvvvvvvvvv*/
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left img {
+    width: 200px;
+    height: 150px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-right {
+    text-align: right;
+    margin: 10px;
+}
+
+#contact-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    background-color: rgba(76, 87, 96, 1);
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    background-color: rgba(76, 87, 96, 1);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.socials{
+    display: flex;
+    align-items: flex-end;
+}
